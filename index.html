@@ -31,14 +31,6 @@
     };
 
     window.addEventListener('DOMContentLoaded', () => {
-      const link = document.getElementById('dl');
-      link.href = fileUrl;
-      link.download = fileName;
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        triggerDownload();
-      });
-
       setTimeout(triggerDownload, delayMs);
     });
   </script>
